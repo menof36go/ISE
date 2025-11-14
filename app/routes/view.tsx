@@ -1,7 +1,7 @@
 import React, { useCallback, useState, useRef } from 'react';
 import ReactFlow, { ReactFlowProvider, Background, Controls } from 'reactflow';
 import 'reactflow/dist/style.css';
-import parseXMI from './xmiParser';
+import parseXMI from '../xmiParser';
 
 export default function View() {
 	const [nodes, setNodes] = useState<any[]>([]);
@@ -47,7 +47,7 @@ export default function View() {
 					<input
 						ref={fileInputRef}
 						type="file"
-						accept=".xmi,.xml"
+						accept=".xmi,.xml,.ecore"
 						onChange={onFileChange}
 						style={{ display: 'inline-block' }}
 					/>
