@@ -60,8 +60,8 @@ export const CustomNode: React.FC<CustomNodeProps> = ({ data }) => {
               {Object.entries(attributes).length > 0 ? (
                   Object.entries(attributes).map(([key, value]) => (
                       <div key={key} style={{ display: "flex", justifyContent: "space-between" }}>
-                          <span style={{ fontWeight: "500" }}>{key}:</span>
-                          <span>{String(value)}</span>
+                          <span style={{ fontWeight: "500", whiteSpace: "nowrap" }}>{key}:</span>
+                          <span style={{ whiteSpace: "nowrap" }}>{String(value)}</span>
                       </div>
                   ))
               ) : (
