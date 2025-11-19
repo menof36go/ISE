@@ -9,7 +9,19 @@ html,
 body {
   @apply bg-white dark:bg-gray-950;
 
+  /* Edge color variables for React Flow custom edges */
+  --edge-color: #888;
+  --edge-selected: #FFCC00;
+  --edge-supertype: #ccc;
+  --edge-supertype-selected: #999;
+  --edge-configurable: #000;
+  --edge-configurable-selected: #333;
+
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+    --edge-color: #bbb;
+    --edge-supertype: #666;
+    --edge-configurable: #fff;
+    --edge-configurable-derived: #9cdcfe;
   }
 }
