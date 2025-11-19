@@ -11,8 +11,10 @@
   "dependencies": {
     "@react-router/node": "^7.9.2",
     "@react-router/serve": "^7.9.2",
+    "@xyflow/react": "^12.9.3",
+    "ecore-ts": "^0.17.8",
+    "elkjs": "^0.11.0",
     "isbot": "^5.1.31",
-    "reactflow": "^11.6.7",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router": "^7.9.2"
