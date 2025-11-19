@@ -1,4 +1,4 @@
-import { BaseEdge, EdgeText, getBezierPath, type EdgeProps } from "@xyflow/react";
+import { BaseEdge, EdgeText, getSmoothStepPath, type EdgeProps } from "@xyflow/react";
 
 interface ConfigurableEdgeData {
   containment?: boolean;
@@ -18,13 +18,13 @@ export default function ConfigurableEdge({
   data,
   selected,
 }: EdgeProps<ConfigurableEdgeData>) {
-  const [edgePath, labelX, labelY] = getBezierPath({
-    sourceX,
-    sourceY,
-    sourcePosition,
-    targetX,
-    targetY,
-    targetPosition,
+  const [edgePath, labelX, labelY] = getSmoothStepPath({
+      sourceX,
+      sourceY,
+      sourcePosition,
+      targetX,
+      targetY,
+      targetPosition,
   });
 
   const isContainment = data?.containment ?? false;

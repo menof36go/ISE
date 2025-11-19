@@ -70,7 +70,9 @@ export const CustomNode: React.FC<CustomNodeProps> = ({ data }) => {
           </div>
 
           {/* Handles for connections */}
+          <Handle type="target" position={Position.Left} />
           <Handle type="target" position={Position.Top} />
+          <Handle type="source" position={Position.Right} />
           <Handle type="source" position={Position.Bottom} />
       </div>
   );

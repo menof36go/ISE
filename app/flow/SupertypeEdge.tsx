@@ -1,4 +1,4 @@
-import { BaseEdge, EdgeText, getBezierPath, type EdgeProps } from "@xyflow/react";
+import { BaseEdge, EdgeText, getSmoothStepPath, type EdgeProps } from "@xyflow/react";
 
 export default function SupertypeEdge({
   id,
@@ -11,13 +11,13 @@ export default function SupertypeEdge({
   label,
   selected,
 }: EdgeProps) {
-  const [edgePath, labelX, labelY] = getBezierPath({
-    sourceX,
-    sourceY,
-    sourcePosition,
-    targetX,
-    targetY,
-    targetPosition,
+  const [edgePath, labelX, labelY] = getSmoothStepPath({
+      sourceX,
+      sourceY,
+      sourcePosition,
+      targetX,
+      targetY,
+      targetPosition,
   });
 
   // Use CSS variable for color scheme awareness
